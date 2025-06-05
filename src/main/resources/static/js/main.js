@@ -23,7 +23,7 @@ function connect(event) {
         usernamePage.classList.add('hidden');
         chatPage.classList.remove('hidden');
 
-        var socket = new SockJS('https://chat-application-production-66f8.up.railway.app/ws');
+        var socket = new SockJS('https://chat-application-production-6037.up.railway.app/ws');
         stompClient = Stomp.over(socket);
 
         stompClient.connect({}, onConnected, onError);
